@@ -2,7 +2,12 @@ remote: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
 version: 0.0.1
 database: database
 expanded:
+- configuracao-e-aquecimento
+- bloco_a-configuração-de-ambiente
+- bloco_a-práticas-com-o-git
+- bloco_a-treino-de-algoritmos
 - campanha-principal
+- bloco_b-primeiras-classes
 tasks: {}
 flags:
   quests: 0
@@ -11,5 +16,5 @@ flags:
   graph: 0
   xray: 0
 lang: py
-index: campanha-principal
+index: toalha
 filter: []
