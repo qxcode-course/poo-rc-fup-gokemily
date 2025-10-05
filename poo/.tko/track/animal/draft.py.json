@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-24_14-47-10",
+            "content": "@@ -42,16 +42,26 @@\n es: str,\n+ age: int,\n  sound: \n@@ -67,13 +67,13 @@\n  str\n- = %22%22\n+: int\n ):%0A \n@@ -276,25 +276,25 @@\n    animal = \n-A\n+a\n nimal()%0A    \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-09-24_14-49-39",
+            "content": "@@ -1,19 +1,18 @@\n class \n-Anima\n+Towe\n l:%0A    d\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-09-24_14-50-16",
+            "content": "@@ -6,17 +6,16 @@\n  Animal:\n- \n %0A    def\n@@ -19,14 +19,16 @@\n def \n+_\n _init_\n+_\n (sel\n@@ -42,21 +42,16 @@\n ies: str\n- = %22%22\n , sound:\n@@ -82,16 +82,21 @@\n .species\n+: str\n  = speci\n@@ -115,21 +115,21 @@\n elf.\n-sound = sound\n+age:  int = 0\n %0A   \n@@ -142,17 +142,26 @@\n elf.\n-age = 0%0A%0A\n+sound: str = sound\n %0A   \n@@ -169,13 +169,16 @@\n def \n+_\n _str_\n+_ \n (sel\n@@ -245,16 +245,17 @@\n sound%7D%22%0A\n+%0A\n def main\n@@ -308,18 +308,17 @@\n     line\n-: \n+.\n str = in\n@@ -334,18 +334,17 @@\n      arg\n-: \n+.\n list%5Bstr\n@@ -518,16 +518,85 @@\n arg%5B2%5D)%0A\n+        elif arg%5B0%5D == %22grow%22:%0A            animal.age8y(int(arg%5B1%5D))%0A\n         \n@@ -665,24 +665,25 @@\n %0A           \n+ \n print(%22Coman\n@@ -686,17 +686,17 @@\n omando n\n-a\n+%C3%A3\n o encont\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-09-24_14-51-52",
+            "content": "class Animal: \n    def _init_(self, species: str = \"\", sound: str = \"\"):\n        self.species = species\n        self.sound = sound\n        self.age = 0\n\n\n    def _str_(self) -> str:\n        return f\"{self.species}:{self.age}:{self.sound}\"\ndef main():\n    animal = Animal()\n    while True:\n        line: str = input()\n        arg: list[str] = line.split(\" \")\n        print(\"$\" + line)\n        if arg[0] == \"end\":\n            break\n        elif arg[0] == \"init\":\n            animal : Animal = Animal(arg[1],arg[2])\n        elif arg[0] == \"show\":\n            print(animal)\n        else:\n           print(\"Comando nao encontrado\")\n\nmain()",
+            "lines": "25"
+        }
+    ]
+}
