@@ -8,7 +8,8 @@ expanded:
 - bloco_a-treino-de-algoritmos
 - campanha-principal
 - bloco_b-primeiras-classes
-tasks: {}
+tasks:
+  animal: '{rate:100}'
 flags:
   quests: 0
   tracks: 0
@@ -16,5 +17,5 @@ flags:
   graph: 0
   xray: 0
 lang: py
-index: toalha
+index: animal
 filter: []

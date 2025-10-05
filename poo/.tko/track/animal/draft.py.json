@@ -17,8 +17,33 @@
         },
         {
             "label": "2025-09-24_14-51-52",
-            "content": "class Animal: \n    def _init_(self, species: str = \"\", sound: str = \"\"):\n        self.species = species\n        self.sound = sound\n        self.age = 0\n\n\n    def _str_(self) -> str:\n        return f\"{self.species}:{self.age}:{self.sound}\"\ndef main():\n    animal = Animal()\n    while True:\n        line: str = input()\n        arg: list[str] = line.split(\" \")\n        print(\"$\" + line)\n        if arg[0] == \"end\":\n            break\n        elif arg[0] == \"init\":\n            animal : Animal = Animal(arg[1],arg[2])\n        elif arg[0] == \"show\":\n            print(animal)\n        else:\n           print(\"Comando nao encontrado\")\n\nmain()",
+            "content": "@@ -20,16 +20,14 @@\n def \n-_\n _init_\n-_\n (sel\n@@ -146,24 +146,25 @@\n ge = 0%0A%0A\n+%0A\n     def \n ageBy(se\n@@ -159,398 +159,13 @@\n def \n-ageBy(self, increment: int) -%3E None:%0A        if self.age == 4 or self.age + increment %3E= 4:%0A            print(f%22warning: %7Bself.species%7D morreu%22)%0A        else:%0A            self.age += increment%0A%0A    def makeSound(self) -%3E str:%0A        if self.age == 0:%0A            return %22---%22%0A        elif self.age %3E= 4:%0A            return %22RIP%22%0A        else:%0A            return self.sound%0A%0A    def _\n _str_\n-_\n (sel\n@@ -232,17 +232,16 @@\n sound%7D%22%0A\n-%0A\n def main\n",
             "lines": "25"
+        },
+        {
+            "label": "2025-10-05_20-24-44",
+            "content": "@@ -697,17 +697,16 @@\n input()%0A\n-%0A\n         \n@@ -738,17 +738,16 @@\n it(%22 %22)%0A\n-%0A\n         \n@@ -792,16 +792,16 @@\n  %22end%22:%0A\n+\n         \n@@ -814,72 +814,8 @@\n eak%0A\n-        elif arg%5B0%5D == %22grow%22:%0A            animal.ageBy(arg%5B1%5D)%0A\n     \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-05_20-29-58",
+            "content": "@@ -872,20 +872,15 @@\n eBy(\n-int(\n arg%5B1%5D)\n-)\n %0A   \n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-10-05_20-30-59",
+            "content": "@@ -217,125 +217,15 @@\n age \n-+ increment == 4:%0A            print(f%22warning: %7Bself.species%7D morreu%22)%0A            self.age += increment%0A        elif\n+== 4 or\n  sel\n@@ -243,16 +243,17 @@\n rement %3E\n+=\n  4:%0A    \n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-10-05_20-33-18",
+            "content": "@@ -994,78 +994,8 @@\n %5D))%0A\n-        elif arg%5B0%5D == %22noise%22:%0A            print(animal.makeSound())%0A\n     \n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-10-05_20-34-50",
+            "content": "class Animal: \n    def __init__(self, species: str = \"\", sound: str = \"\"):\n        self.species = species\n        self.sound = sound\n        self.age = 0\n\n    def ageBy(self, increment: int) -> None:\n        if self.age + increment == 4:\n            print(f\"warning: {self.species} morreu\")\n            self.age += increment\n        elif self.age + increment > 4:\n            print(f\"warning: {self.species} morreu\")\n        else:\n            self.age += increment\n\n    def makeSound(self) -> str:\n        if self.age == 0:\n            return \"---\"\n        elif self.age >= 4:\n            return \"RIP\"\n        else:\n            return self.sound\n\n    def __str__(self) -> str:\n        return f\"{self.species}:{self.age}:{self.sound}\"\n\ndef main():\n    animal = Animal()\n    while True:\n        line: str = input()\n\n        arg: list[str] = line.split(\" \")\n\n        print(\"$\" + line)\n        if arg[0] == \"end\":\n            break\n        elif arg[0] == \"grow\":\n            animal.ageBy(int(arg[1]))\n        elif arg[0] == \"noise\":\n            print(animal.makeSound())\n        elif arg[0] == \"init\":\n            animal : Animal = Animal(arg[1],arg[2])\n        elif arg[0] == \"show\":\n            print(animal)\n        else:\n           print(\"Comando nao encontrado\")\n\nmain()",
+            "lines": "48"
         }
     ]
 }
