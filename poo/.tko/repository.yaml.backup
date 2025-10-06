@@ -9,7 +9,10 @@ expanded:
 - campanha-principal
 - bloco_b-primeiras-classes
 tasks:
-  animal: '{rate:100}'
+  toalha: '{rate:100, human:_, guide:_, alone:8, study:250}'
+  animal: '{rate:100, human:_, guide:_, alone:7, study:300}'
+  carro: '{rate:100, human:_, alone:8, study:40}'
+  calculadora: '{rate:100, human:_, alone:9, study:300}'
 flags:
   quests: 0
   tracks: 0
@@ -17,5 +20,5 @@ flags:
   graph: 0
   xray: 0
 lang: py
-index: animal
+index: bloco_b-modificadores-de-acesso
 filter: []

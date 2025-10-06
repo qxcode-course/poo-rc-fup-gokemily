@@ -21,3 +21,21 @@
 2025-10-05 20:38:39, MOVE, v:1, k:animal, mode:PICK
 2025-10-05 20:38:42, EXEC, v:1, k:animal, mode:FULL, rate:100
 2025-10-05 20:38:45, EXEC, v:1, k:animal, mode:FREE
+2025-10-05 20:42:12, SELF, v:1, k:carro
+2025-10-05 20:44:00, SELF, v:1, k:animal, rate:100, human:_, guide:_, alone:10, study:300
+2025-10-05 20:45:46, SELF, v:1, k:toalha, rate:100, human:_, guide:_, alone:6, study:250
+2025-10-05 20:46:05, SELF, v:1, k:animal, rate:100, human:_, guide:_, alone:7, study:300
+2025-10-05 20:46:05, MOVE, v:1, k:animal, mode:PICK
+2025-10-05 20:46:14, EXEC, v:1, k:animal, mode:FREE
+2025-10-05 20:47:10, SELF, v:1, k:toalha, rate:100, human:_, guide:_, alone:8, study:250
+2025-10-05 20:47:17, MOVE, v:1, k:carro, mode:DOWN
+2025-10-05 20:47:30, MOVE, v:1, k:carro, mode:PICK
+2025-10-05 22:43:45, MOVE, v:1, k:carro, mode:PICK
+2025-10-05 22:43:47, EXEC, v:1, k:carro, mode:FULL, rate:0, size:66
+2025-10-05 22:44:57, EXEC, v:1, k:carro, mode:FULL, rate:50, size:66
+2025-10-05 22:46:46, EXEC, v:1, k:carro, mode:FULL, rate:60, size:66
+2025-10-05 22:46:46, EXEC, v:1, k:carro, mode:FULL, rate:60, size:66
+2025-10-05 22:47:46, EXEC, v:1, k:carro, mode:FULL, rate:100, size:66
+2025-10-05 22:48:20, MOVE, v:1, k:carro, mode:BACK
+2025-10-05 22:49:30, SELF, v:1, k:carro, rate:100, human:_, alone:8, study:40
+2025-10-05 22:49:37, MOVE, v:1, k:calculadora, mode:DOWN

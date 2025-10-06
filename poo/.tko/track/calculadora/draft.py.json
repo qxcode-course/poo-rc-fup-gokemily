@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-06_00-44-03",
+            "content": "@@ -1323,85 +1323,8 @@\n %5D))%0A\n-        elif arg%5B0%5D == %22init%22:%0A            calculadora = Calculadora(arg%5B1%5D)%0A\n     \n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-06_00-45-46",
+            "content": "@@ -918,9 +918,8 @@\n ora(\n-5\n )%0A  \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-06_00-46-56",
+            "content": "@@ -199,18 +199,17 @@\n %22display\n- =\n+:\n  %7Bself.d\n@@ -228,18 +228,17 @@\n  baterry\n- =\n+:\n  %7Bself.b\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-06_00-49-01",
+            "content": "@@ -65,26 +65,26 @@\n     self.bat\n-t\n e\n+r\n ry = 0%0A     \n@@ -90,26 +90,26 @@\n     self.bat\n-t\n e\n+r\n ryMax = bate\n@@ -225,18 +225,18 @@\n 2f%7D, bat\n-t\n e\n+r\n ry = %7Bse\n@@ -241,18 +241,18 @@\n self.bat\n-t\n e\n+r\n ry%7D%22%0A   \n@@ -318,26 +318,26 @@\n  if self.bat\n-t\n e\n+r\n ry + increme\n@@ -346,27 +346,27 @@\n  %3C= self.bat\n-t\n er\n+r\n yMax:%0A      \n@@ -379,18 +379,18 @@\n self.bat\n-t\n e\n+r\n ry += in\n@@ -427,26 +427,26 @@\n     self.bat\n-t\n e\n+r\n ry = self.ba\n@@ -446,18 +446,18 @@\n self.bat\n-t\n e\n+r\n ryMax%0A  \n@@ -514,34 +514,34 @@\n      if self.bat\n-t\n e\n+r\n ry == 0:%0A       \n@@ -698,18 +698,18 @@\n self.bat\n-t\n e\n+r\n ry == 0:\n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-06_00-50-33",
+            "content": "@@ -1232,27 +1232,16 @@\n arregar(\n-int(arg%5B1%5D)\n )%0A      \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-06_00-51-08",
+            "content": "@@ -1402,28 +1402,23 @@\n uladora(\n-int(\n arg%5B1%5D)\n-)\n %0A       \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-06_00-51-53",
+            "content": "@@ -632,38 +632,8 @@\n + b%0A\n-            self.battery -= 1%0A\n     \n@@ -873,38 +873,8 @@\n / b%0A\n-            self.battery -= 1%0A\n     \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-06_00-53-20",
+            "content": "@@ -856,38 +856,8 @@\n o%22)%0A\n-            self.battery -= 1%0A\n     \n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-10-06_00-54-02",
+            "content": "class Calculadora:\n    def __init__(self, baterryMax: int):\n        self.battery = 0\n        self.batteryMax = baterryMax\n        self.display = 0\n    \n    def __str__(self) -> str:\n        return f\"display = {self.display:.2f}, battery = {self.battery}\"\n    \n    def recarregar(self, increment: int) -> None:\n        if self.battery + increment <= self.batteryMax:\n            self.battery += increment\n        else:\n            self.battery = self.batteryMax\n    \n    def somar(self, a: int, b: int) -> int:\n        if self.battery == 0:\n            print(\"fail: bateria insuficiente\")\n        else:\n            self.display = a + b\n            self.battery -= 1\n    \n    def divisao(self, a: int, b: int) -> int:\n        if self.battery == 0:\n            print(\"fail: bateria insuficiente\")\n        elif b == 0:\n            print(\"fail: divisao por zero\")\n            self.battery -= 1\n        else:\n            self.display = a / b\n            self.battery -= 1\n    \ndef main():\n    calculadora = Calculadora(5)\n    while True:\n        line: str = input()\n\n        arg: list[str] = line.split(\" \")\n\n        print(\"$\" + line)\n        if arg[0] == \"end\":\n            break\n        elif arg[0] == \"sum\":\n            calculadora.somar(int(arg[1]), int(arg[2]))\n        elif arg[0] == \"charge\":\n            calculadora.recarregar(int(arg[1]))\n        elif arg[0] == \"div\":\n            calculadora.divisao(int(arg[1]), int(arg[2]))\n        elif arg[0] == \"init\":\n            calculadora = Calculadora(int(arg[1]))\n        elif arg[0] == \"show\":\n            print(calculadora)\n        else:\n           print(\"Comando nao encontrado\")\n\nmain()",
+            "lines": "56"
+        }
+    ]
+}
